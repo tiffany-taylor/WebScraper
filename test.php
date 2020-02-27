@@ -10,4 +10,4 @@ require_once __DIR__ . '/vendor/autoload.php';
 
 $scraper = new Scraper(new Client(HttpClientBuilder::buildDefault()));
 
-var_dump(wait($scraper->search('nonexistingcommand')));
+var_dump(wait($scraper->search('lagavulin')));
