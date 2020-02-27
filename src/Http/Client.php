@@ -37,6 +37,7 @@ class Client
 
             $response = yield $this->makeRequest($request);
 
+            //var_dump(yield $response->getBody()->buffer());die;
             return domdocument_load_html(yield $response->getBody()->buffer());
         });
     }
